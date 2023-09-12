@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevSearch
 
-## Getting Started
+![Preview](https://github.com/lucasdealmeidadev/devsearch/blob/main/devsearch.png?raw=true)
 
-First, run the development server:
+O GitHub se destaca como a principal plataforma para desenvolvedores, oferecendo a oportunidade de explorar, colaborar e participar de projetos em uma comunidade globalmente conectada. Não espere mais, una-se a nós e faça parte dessa vibrante rede de programadores apaixonados. Sua jornada no mundo da programação está prestes a decolar!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## 🚀 Recursos utilizados
+
+* **[Next.js](https://nextjs.org/)**
+* **[Next.js Toploader](https://www.npmjs.com/package/nextjs-toploader)**
+* **[React Icons](https://react-icons.github.io/react-icons/)**
+* **[React Toastify](https://fkhadra.github.io/react-toastify/introduction)**
+* **[Sass](https://www.npmjs.com/package/sass)**
+* **[TypeScript](https://www.typescriptlang.org/)**
+
+## 🔥 Executando a aplicação no ambiente local
+
+Caso você deseja executar o projeto na sua máquina local, basta seguir os passos abaixo:
+
+### 🌀 Começando... 
+
+Para começar, você deve simplesmente clonar o repositório do projeto na sua máquina e instalar as dependências.
+
+Abra o cmd (caso esteja utilizando o Windows) navegue até o local onde você clonou o projeto
+
+```
+cd "C:\Users\NomeDoComputador\Documents\cloneprojeto"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Depois, quando estiver na pasta do projeto, basta digitar no cmd a seguinte instrução: **(dentro da pasta do projeto clonado)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Ao digitar a instrução acima, automaticamente ele irá baixar todas as dependências listadas e definidas no arquivo package.json:
 
-## Learn More
+* `node_modules` - que contêm os packages do npm que precisará para o projeto.
 
-To learn more about Next.js, take a look at the following resources:
+#### 💨 Executando a aplicação 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+No diretório do projeto execute o camando abaixo para executar o projeto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+> npm start
+```
 
-## Deploy on Vercel
+## 🚩 Tenho dúvidas... O que fazer? 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Caso tenham dúvidas sobre o código do projeto, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/lucasdealmeidadev/devsearch/issues)**. Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+
+* Licenciado sob a licença MIT - veja [LICENSE](https://github.com/lucasdealmeidadev/devsearch/blob/main/LICENCE) para mais informações.
+
+----------
+
+Desenvolvido por Lucas de Almeida Monteiro (:  👋  [ Entrar em contato!!](https://www.linkedin.com/in/lucas-de-almeida-monteiro)
