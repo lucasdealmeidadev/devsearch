@@ -7,7 +7,6 @@ import { BsSearch, SiGithub } from '@/components/Icons';
 import NProgress from 'nextjs-toploader/../nprogress';
 
 import styles from '@/styles/page.module.scss';
-import { Router } from 'next/router';
 
 export default function Home() {
   const router = useRouter();
