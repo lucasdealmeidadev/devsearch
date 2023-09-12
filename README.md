@@ -2,7 +2,7 @@
 
 ![Preview](https://github.com/lucasdealmeidadev/devsearch/blob/main/devsearch.png?raw=true)
 
-O GitHub se destaca como a principal plataforma para desenvolvedores, oferecendo a oportunidade de explorar, colaborar e participar de projetos em uma comunidade globalmente conectada. Não espere mais, una-se a nós e faça parte dessa vibrante rede de programadores apaixonados. Sua jornada no mundo da programação está prestes a decolar!
+O DevSearch é um projeto pessoal que explora as capacidades do Next.js 13, a mais recente versão dessa poderosa ferramenta de desenvolvimento web. Junte-se a esta jornada de exploração tecnológica.
 
 ## 🚀 Recursos utilizados
 
