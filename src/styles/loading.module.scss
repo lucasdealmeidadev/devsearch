@@ -1,0 +1,22 @@
+.loading {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 140px);
+
+  svg {
+    animation: animate 2s infinite;
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

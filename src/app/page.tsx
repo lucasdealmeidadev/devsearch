@@ -1,68 +1,57 @@
 'use client';
 
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { FormEvent, useState } from 'react';
-import { BsSearch } from '../components/Icons';
+import { BsSearch, SiGithub } from '@/components/Icons';
 
-import logo from '../../public/logo.svg';
-import styles from '../styles/page.module.scss';
+import NProgress from 'nextjs-toploader/../nprogress';
+
+import styles from '@/styles/page.module.scss';
+import { Router } from 'next/router';
 
 export default function Home() {
   const router = useRouter();
-
-  const [username, setUsername] = useState<string>('');
+  const [slug, setSlug] = useState<string>('');
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    if (!username) return false;
+    if (!slug) return false;
 
-    router.push(`/user/${username}`);
+    NProgress.start();
+
+    router.push(`/users/${slug}`);
+
+    NProgress.done();
   }
 
   return (
     <>
-      <header>
-        <nav>
+      <section>
+        <div className={styles.grid}>
+          <SiGithub
+            size={130}
+            color='var(--black-dark)'
+          />
 
-        </nav>
-      </header>
+          <h1>DevSearch</h1>
 
-      <main>
-        <section className='container'>
-          <div className={styles.grid}>
-            <Image
-              src={logo}
-              width={250}
-              height={250}
-              quality={100}
-              alt='Logo DevSearch'
-            />
+          <div className={styles.action}>
+            <form onSubmit={handleSubmit}>
+              <input
+                type='text'
+                name='teste'
+                value={slug}
+                onChange={(e) => setSlug(e.target.value)}
+              />
 
-            <h1>DevSearch</h1>
-
-            <div className={styles.action}>
-              <form onSubmit={handleSubmit}>
-                <input
-                  type='text'
-                  name='teste'
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                />
-
-                <button type='submit'>
-                  <BsSearch size={30} color='var(--white-normal)' />
-                </button>
-              </form>
-            </div>
+              <button type='submit'>
+                <BsSearch size={30} color='var(--white-normal)' />
+              </button>
+            </form>
           </div>
-        </section>
-      </main>
-
-      <footer>
-
-      </footer>
+        </div>
+      </section>
     </>
   )
 }

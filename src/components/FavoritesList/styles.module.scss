@@ -1,0 +1,12 @@
+.grid_favorites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  gap: 25px;
+  //background-color: red;
+  margin: 50px auto;
+}
