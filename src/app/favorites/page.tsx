@@ -1,31 +1,17 @@
-'use client';
+import type { Metadata } from 'next';
+import { FavoritesList } from './components/FavoritesList';
+import styles from './styles.module.scss';
 
-import { useEffect, useState } from 'react';
-import { FavoritesList } from '@/components/FavoritesList';
-import { User } from '@/types';
-import Loading from '../loading';
+export const metadata: Metadata = {
+  title: 'DevSearch | Meus favoritos',
+}
 
 export default function Favorites() {
-  const [favorites, setFavorites] = useState<User['items']>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    const myList = JSON.parse(localStorage.getItem('@devsearch') || '[]');
-
-    setFavorites(myList);
-    setLoading(false);
-  }, []);
-
-  if (loading) {
-    return <Loading />;
-  }
-
   return (
-    <>
-      <FavoritesList
-        favorites={favorites}
-        setFavorites={setFavorites}
-      />
-    </>
+    <section>
+      <div className={styles.grid_favorites}>
+        <FavoritesList/>
+      </div>
+    </section>
   );
 }

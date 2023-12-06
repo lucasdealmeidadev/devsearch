@@ -2,7 +2,7 @@
 
 ![Preview](https://github.com/lucasdealmeidadev/devsearch/blob/main/devsearch.png?raw=true)
 
-O DevSearch é um projeto pessoal que explora as capacidades do Next.js 13, a mais recente versão dessa poderosa ferramenta de desenvolvimento web. Junte-se a esta jornada de exploração tecnológica.
+O DevSearch é um projeto pessoal que explora as capacidades do Next.js 14, a mais recente versão dessa poderosa ferramenta de desenvolvimento web. Junte-se a esta jornada de exploração tecnológica.
 
 ## 🚀 Recursos utilizados
 
